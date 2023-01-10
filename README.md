@@ -1,6 +1,7 @@
 # CAIS++ Winter Project: ASL Alphabet
 
-Naina Panjwani, npanjwan@usc.edu 
+Naina Panjwani, npanjwan@usc.edu
+
 For my project, I chose to train a machine learning algorithm that can classify and differentiate between American Sign Language letters. I used a Kaggle dataset (ASL Alphabet Version 1 by Akash Nagaraj) that contained 87,000 200 x 200 pixel images with 29 classes. Of the 29 classes, 26 are for the letters A-Z and the 3 rest of the classes are for SPACE, DELETE and NOTHING. However, when I ran the model with all 87,000 images, the training time was too long and my Kaggle notebook grew inactive. So, I only processed every other image (43,500 images) to decrease the training time.  
 
 I decided to use transfer learning on a pre-trained computer vision model (ResNet-50) to train the algorithm and classify the 29 classes. The hyperparameters I settled on were the model itself, the criterion, the optimizer, the scheduler, and the number of epochs. These are a good set for my specific task because the Adam optimizer and the criterion (loss function) are used in forward pass and back propagation while the scheduler sets the learning rate.  
